@@ -1,0 +1,13 @@
+function clickFunction(){
+    let bg = document.getElementById('background');
+    console.log(bg);
+    let colors = ["red", "green", "blue", "yellow","indigo","brown","rainbow"];
+
+    const colorIndex = parseInt(Math.random()*colors.length);
+    bg.style.backgroundColor = colors[colorIndex];}
+
+#HTML
+<div id="background">
+    <h1>Changing Background Color</h1>
+    <button onclick="clickFunction()">Click Me</button>
+</div>
